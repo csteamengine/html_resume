@@ -1,19 +1,36 @@
-@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+/*@import 'https://fonts.googleapis.com/css?family=Titillium+Web';*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
+    margin: 0 auto;
     text-align: center;
     position: relative;
     width: 8.5in;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+#education{
+    margin: 0 auto;
 }
 #name{
     border: 1px solid black;
-    width: 300px;
+    width: 350px;
     margin: 50px auto 20px auto ;
+    padding: 15px 10px 15px 10px;
+    font-size: 35px;
+    font-weight: 900;
 }
 .narrow{
-    border: 1px solid black;
-    width: 50px;
     height: 1px;
+    width: 50px;
+    color: black;
+    display: block;
+    background: transparent;
+    border: none;
+    border-top: solid 1px black;
+}
+.left_hr{
+    position: absolute;
+    left: 0px;
+    top: 20px;
 }
 #se_web{
     margin-top: 0px;
@@ -24,18 +41,53 @@ body{
     position: relative;
 }
 .content{
+    position: relative;
+    margin-top: 15px;
     margin-left: 20px;
+    display: block;
 }
 .topic_title{
     font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
 }
 .vertical{
     position: absolute;
-    width: 0px;
-    height: 90%;
-    top: 10%;
-    border: 1px solid black;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: -20px;
+    margin: 0;
+    display: block;
+    background: transparent;
+    border: none;
+    border-left: solid 1px black;
+}
+.section{
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: -15px;
+}
+.small{
+    color: rgba(0,0,0,.4);
+}
+.small h4{
+    margin-top: 0;
+}
+hr{
+    display: block;
+    height: 1px;
+    background: transparent;
+    width: 100%;
+    border: none;
+    border-top: solid 1px black;
 }
 @media print{
-
+    @page {
+        size: auto;   /* auto is the initial value */
+        margin: 10px 1in 10px 1in;  /* this affects the margin in the printer settings */
+    }
 }
